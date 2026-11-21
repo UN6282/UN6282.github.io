@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>박세언 Se-Eon Park | Postdoctoral Researcher</title>
+<meta name="description" content="Se-Eon Park, Postdoctoral Researcher at Chonnam National University — engineered cementitious composites, alkali-activated and geopolymer composites, recycled fibers, impact-resistant structures.">
+<link rel="icon" href="assets/symbol.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#00893E;--green-d:#006B30;--ink:#1d2421;--muted:#5f6b65;--line:#e3e8e5;--bg:#ffffff;--soft:#f4f8f5;--card:#ffffff}
+@media (prefers-color-scheme:dark){:root{--ink:#e8eee9;--muted:#9fb0a6;--line:#2a3430;--bg:#111614;--soft:#18201c;--card:#161d1a;--green:#2fb36a;--green-d:#5fd08f}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans KR",system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--green);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;gap:16px;height:56px}
+.brand{font-weight:700;color:var(--ink);display:flex;align-items:center;gap:8px;white-space:nowrap}
+.brand img{height:22px}
+nav.links{margin-left:auto;display:flex;gap:18px;font-size:14px}
+nav.links a{color:var(--muted)}nav.links a:hover{color:var(--green);text-decoration:none}
+.lang{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:4px 12px;font-size:13px;cursor:pointer}
+@media (max-width:640px){nav.links{display:none}.lang{margin-left:auto}}
+.hero{padding:72px 0 48px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--soft),var(--bg))}
+.hero .wrap{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.hero h1{font-size:clamp(32px,5vw,46px);margin:0;letter-spacing:-.02em;line-height:1.15}
+.hero h1 small{display:block;font-size:.45em;color:var(--muted);font-weight:500;letter-spacing:0;margin-top:8px}
+.role{margin:18px 0 4px;font-size:18px;font-weight:600;color:var(--green-d)}
+.aff{color:var(--muted);margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:14px;font-weight:500}
+.btn.primary{background:var(--green);border-color:var(--green);color:#fff}
+.btn:hover{text-decoration:none;border-color:var(--green)}
+.hero .mark{width:150px;opacity:.95}
+@media (max-width:640px){.hero .wrap{grid-template-columns:1fr}.hero .mark{display:none}}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin:0 0 24px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat b{display:block;font-size:26px;font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--muted)}
+.topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.topic{border:1px solid var(--line);border-left:3px solid var(--green);border-radius:10px;padding:16px 18px;background:var(--card)}
+.topic h3{margin:0 0 6px;font-size:16px}
+.topic p{margin:0;font-size:14px;color:var(--muted)}
+.tl{list-style:none;margin:0 0 8px;padding:0}
+h3.sub{font-size:15px;margin:22px 0 6px;color:var(--ink)}h3.sub:first-of-type{margin-top:0}
+.tl li{display:grid;grid-template-columns:140px 1fr;gap:16px;padding:10px 0;border-top:1px dashed var(--line)}
+.tl li:first-child{border-top:0}
+.tl .when{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+@media (max-width:640px){.tl li{grid-template-columns:1fr;gap:2px}}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:5px 14px;font-size:13px;cursor:pointer}
+.chip.on{background:var(--green);border-color:var(--green);color:#fff}
+.year{font-weight:700;font-size:15px;margin:28px 0 8px;color:var(--muted)}
+.pub{padding:12px 0;border-top:1px solid var(--line)}
+.pub .t{font-weight:600}
+.pub .a{font-size:14px;color:var(--muted)}
+.pub .a b{color:var(--ink)}
+.pub .v{font-size:14px;font-style:italic}
+.badge{display:inline-block;font-size:11px;font-weight:600;padding:1px 8px;border-radius:999px;background:color-mix(in srgb,var(--green) 14%,transparent);color:var(--green-d);margin-left:6px;font-style:normal;vertical-align:1px}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.contact div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.contact span{display:block;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+footer{padding:28px 0 48px;color:var(--muted);font-size:13px}
+[data-lang="en"] .ko{display:none}[data-lang="ko"] .en{display:none}
+.linkbtn{background:none;border:0;padding:0;font:inherit;color:var(--green);cursor:pointer;text-decoration:underline dotted}
+button.btn{cursor:pointer;font-family:inherit}
+</style>
+</head>
+<body data-lang="ko">
+<header class="nav"><div class="wrap">
+  <a class="brand" href="#top"><img src="assets/symbol.png" alt=""> <span class="ko">박세언</span><span class="en">Se-Eon Park</span></a>
+  <nav class="links">
+    <a href="#research"><span class="ko">연구분야</span><span class="en">Research</span></a>
+    <a href="#cv"><span class="ko">이력</span><span class="en">CV</span></a>
+    <a href="#pubs"><span class="ko">논문</span><span class="en">Publications</span></a>
+    <a href="#projects"><span class="ko">과제</span><span class="en">Projects</span></a>
+    <a href="#awards"><span class="ko">수상</span><span class="en">Awards</span></a>
+    <a href="#patents"><span class="ko">특허</span><span class="en">Patents</span></a>
+    <a href="#contact"><span class="ko">연락처</span><span class="en">Contact</span></a>
+  </nav>
+  <button class="lang" id="langBtn" aria-label="Switch language">EN</button>
+</div></header>
+
+<div class="hero" id="top"><div class="wrap">
+  <div>
+    <h1><span class="ko">박세언</span><span class="en">Se-Eon Park</span>
+      <small><span class="ko">Se-Eon Park, Ph.D.</span><span class="en">박세언, Ph.D.</span></small></h1>
+    <p class="role"><span class="ko">박사후연구원</span><span class="en">Postdoctoral Researcher</span></p>
+    <p class="aff"><span class="ko">전남대학교 건축토목공학과 · <a href="https://ekvm80.github.io/cmlab/" target="_blank" rel="noopener">건설재료연구실</a> (지도교수 이방연)</span><span class="en"><a href="https://ekvm80.github.io/cmlab/" target="_blank" rel="noopener">Construction Materials Lab</a>, Dept. of Architecture and Civil Engineering, Chonnam National University</span></p>
+    <div class="btns">
+      <button type="button" class="btn primary js-email">✉ <span class="ko">이메일 보기</span><span class="en">Show email</span></button>
+      <a class="btn" href="https://scholar.google.co.kr/citations?user=KJcBHtAAAAAJ&hl=ko" target="_blank" rel="noopener">Google Scholar ↗</a>
+      <a class="btn" href="https://orcid.org/0000-0001-7940-1963" target="_blank" rel="noopener">ORCID ↗</a>
+      <a class="btn" href="https://ekvm80.github.io/cmlab/" target="_blank" rel="noopener"><span class="ko">연구실 홈페이지 ↗</span><span class="en">Lab website ↗</span></a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>23</b><span class="ko">국제학술지 논문</span><span class="en">International journal papers</span></div>
+      <div class="stat"><b>7</b><span class="ko">국제학술지 제1저자</span><span class="en">First-author (intl.)</span></div>
+      <div class="stat"><b>34</b><span class="ko">국내 논문 · 학술발표</span><span class="en">Domestic papers & talks</span></div>
+      <div class="stat"><b>370+</b><span class="ko">피인용 수</span><span class="en">Citations</span></div>
+    </div>
+  </div>
+  <img class="mark" src="assets/symbol.png" alt="Chonnam National University symbol">
+</div></div>
+
+<main>
+<section id="about"><div class="wrap">
+  <h2><span class="ko">소개</span><span class="en">About</span></h2>
+  <p class="ko">2025년 9월부터 전남대학교 건축토목공학과 건설재료연구실(지도교수 이방연)에서 박사후연구원으로 근무하고 있으며, 같은 연구실에서 학부연구생·석사·박사 과정을 거쳤습니다. 고감쇠 콘크리트, 폐섬유 보강 고연성 복합재료(ECC/SHCC), 무시멘트 알칼리활성·지오폴리머 복합재료의 역학적 성능, 폐섬유 재활용, 자기치유, 그리고 충격·고속 비상체에 대한 구조 부재의 저항성능을 연구합니다.</p>
+  <p class="en">Since September 2025, I have been a postdoctoral researcher at the Construction Materials Lab (PI: Prof. Bang Yeon Lee), Department of Architecture and Civil Engineering, Chonnam National University, Korea, where I also completed my undergraduate research, M.S., and Ph.D. My research focuses on high-damping concrete and the mechanical performance of recycled-fiber-reinforced engineered cementitious composites (ECC/SHCC) and cement-free alkali-activated and geopolymer composites, recycling of waste textile fibers, autogenous crack healing, and the impact and projectile resistance of structural members.</p>
+</div></section>
+
+<section id="research"><div class="wrap">
+  <h2><span class="ko">연구분야</span><span class="en">Research Interests</span></h2>
+  <div class="topics">
+    <div class="topic"><h3><span class="ko">고연성 시멘트 복합재료 (ECC)</span><span class="en">Engineered Cementitious Composites</span></h3><p><span class="ko">변형경화 거동, 섬유 하이브리드화, 인장연성 향상</span><span class="en">Strain-hardening behavior, fiber hybridization, tensile ductility</span></p></div>
+    <div class="topic"><h3><span class="ko">무시멘트·지오폴리머 복합재료</span><span class="en">Alkali-Activated & Geopolymer Composites</span></h3><p><span class="ko">슬래그·플라이애시 기반, 경량화, 고온 노출 후 성능</span><span class="en">Slag/fly-ash binders, lightweight mixes, elevated-temperature performance</span></p></div>
+    <div class="topic"><h3><span class="ko">폐섬유 재활용</span><span class="en">Recycled Selvage Fibers</span></h3><p><span class="ko">섬유산업 폐기물(셀비지 섬유)을 활용한 저비용·지속가능 복합재료</span><span class="en">Low-cost, sustainable composites using textile-waste PE selvage fibers</span></p></div>
+    <div class="topic"><h3><span class="ko">자기치유</span><span class="en">Autogenous Crack Healing</span></h3><p><span class="ko">자연·수중 환경에서의 균열 치유 및 성능 회복</span><span class="en">Crack healing and recovery in natural and underwater conditions</span></p></div>
+    <div class="topic"><h3><span class="ko">충격 저항 구조</span><span class="en">Impact-Resistant Structures</span></h3><p><span class="ko">카고메 트러스 보강, 고속 비상체 충격, 하이브리드 적층 패널</span><span class="en">Kagome truss reinforcement, high-velocity projectile impact, layered panels</span></p></div>
+    <div class="topic"><h3><span class="ko">이미지 프로세싱 · AI 분석</span><span class="en">Image Processing & AI Analysis</span></h3><p><span class="ko">섬유 분산성 평가, 표면 정량 평가, 데이터 분석 및 코딩</span><span class="en">Fiber-dispersion evaluation, quantitative surface assessment, data analysis and coding</span></p></div>
+    <div class="topic"><h3><span class="ko">감쇠 및 기능성 재료</span><span class="en">Damping & Functional Materials</span></h3><p><span class="ko">폴리우레탄 코팅 골재, 고무 입자 복합재료의 감쇠 특성</span><span class="en">Polyurethane-coated aggregates and rubberized composites for damping</span></p></div>
+  </div>
+</div></section>
+
+<section id="cv"><div class="wrap">
+  <h2><span class="ko">이력</span><span class="en">Experience & Education</span></h2>
+  <h3 class="sub"><span class="ko">경력</span><span class="en">Experience</span></h3>
+<ul class="tl">
+    <li><div class="when">2025.09 – <span class="ko">현재</span><span class="en">Present</span></div><div><b><span class="ko">박사후연구원</span><span class="en">Postdoctoral Researcher</span></b><br><span class="ko">전남대학교 건축토목공학과 건설재료연구실</span><span class="en">Construction Materials Lab, Dept. of Architecture and Civil Engineering, Chonnam National University</span></div></li>
+    <li><div class="when">2019.06 – 2020.06</div><div><b><span class="ko">연구원</span><span class="en">Researcher</span></b><br><span class="ko">전남대학교 바이오하우징연구소 (개발 및 연구)</span><span class="en">Bio-Housing Research Institute, Chonnam National University</span></div></li>
+    <li><div class="when">2015.02 – 2017.02</div><div><b><span class="ko">학부연구생</span><span class="en">Undergraduate Researcher</span></b><br><span class="ko">전남대학교 건설재료연구실</span><span class="en">Construction Materials Lab, Chonnam National University</span></div></li>
+  </ul>
+<h3 class="sub"><span class="ko">학력</span><span class="en">Education</span></h3>
+<ul class="tl">
+    <li><div class="when">2021.03 – 2025.08</div><div><b><span class="ko">공학박사</span><span class="en">Ph.D.</span></b><br><span class="ko">전남대학교 건축·토목공학과 (지도교수 이방연)</span><span class="en">Dept. of Architecture and Civil Engineering, Chonnam National University (Advisor: Prof. Bang Yeon Lee)</span><br><em style="color:var(--muted);font-size:14px">High damping concrete · Recycled fiber-reinforced composite</em></div></li>
+    <li><div class="when">2017.03 – 2019.02</div><div><b><span class="ko">공학석사</span><span class="en">M.S.</span></b><br><span class="ko">전남대학교 건축공학과</span><span class="en">Dept. of Architectural Engineering, Chonnam National University</span></div></li>
+    <li><div class="when">2011.03 – 2017.02</div><div><b><span class="ko">공학사</span><span class="en">B.S.</span></b><br><span class="ko">전남대학교 건축공학과</span><span class="en">Dept. of Architectural Engineering, Chonnam National University</span></div></li>
+  </ul>
+</div></section>
+
+<section id="pubs"><div class="wrap">
+  <h2><span class="ko">연구실적</span><span class="en">Publications</span></h2>
+  <div class="filters">
+    <button class="chip on" data-f="all"><span class="ko">전체</span><span class="en">All</span></button>
+    <button class="chip" data-f="first"><span class="ko">제1저자</span><span class="en">First author</span></button>
+    <button class="chip" data-f="intl"><span class="ko">국제학술지</span><span class="en">International</span></button>
+    <button class="chip" data-f="dom"><span class="ko">국내학술지</span><span class="en">Domestic</span></button>
+    <button class="chip" data-f="conf"><span class="ko">학술대회</span><span class="en">Conference</span></button>
+  </div>
+  <div id="pubList"></div>
+  <p style="margin-top:24px;font-size:14px;color:var(--muted)"><span class="ko">전체 목록과 최신 인용 수는</span><span class="en">For the full list and up-to-date citation counts, see</span> <a href="https://scholar.google.co.kr/citations?user=KJcBHtAAAAAJ&hl=ko" target="_blank" rel="noopener">Google Scholar</a><span class="ko">에서 확인할 수 있습니다.</span><span class="en">.</span></p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2><span class="ko">연구과제</span><span class="en">Research Projects</span></h2>
+  <ul class="tl">
+    <li><div class="when">2025.06 –</div><div><b><span class="ko">에너지 지반구조물 기반의 Geo-TABS 설계 및 운영 통합 프레임워크 개발</span><span class="en">Integrated design and operation framework for Geo-TABS (Geo-Thermally Activated Building System) based on energy geo-structures</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국연구재단 기초연구실지원사업 · 공동연구원</span><span class="en" style="color:var(--muted);font-size:14px">NRF Basic Research Laboratory Program · Co-investigator</span></div></li>
+    <li><div class="when">2022.03 –</div><div><b><span class="ko">탄소중립 실현을 위한 지속가능 초고연성 무기계 복합재료 개발</span><span class="en">Sustainable ultra-ductile inorganic composites for carbon neutrality</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국연구재단 중견연구자지원사업 · 공동연구원</span><span class="en" style="color:var(--muted);font-size:14px">NRF Mid-Career Researcher Program · Co-investigator</span></div></li>
+    <li><div class="when">2024.09 – 2025.08</div><div><b><span class="ko">폴리에틸렌 기반 셀비지 단섬유로 보강된 고연성 친환경 복합재료 개발 및 물리화학적 성능 규명</span><span class="en">Development and physicochemical characterization of highly ductile eco-friendly composites reinforced with PE-based short selvage fibers</span></b><span class="badge">PI</span><br><span class="ko" style="color:var(--muted);font-size:14px">한국연구재단 이공분야학술연구지원사업 · 연구책임자</span><span class="en" style="color:var(--muted);font-size:14px">NRF Academic Research Support Program · Principal Investigator</span></div></li>
+    <li><div class="when">2025.03 – 2025.08</div><div><b><span class="ko">에너지 지반구조물 기반의 Geo-TABS 설계 및 운영 통합 프레임워크 개발</span><span class="en">Integrated design and operation framework for Geo-TABS based on energy geo-structures</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국연구재단 기초연구실지원사업 · 학생연구자</span><span class="en" style="color:var(--muted);font-size:14px">NRF Basic Research Laboratory Program · Student researcher</span></div></li>
+    <li><div class="when">2023.03 – 2025.02</div><div><b><span class="ko">에너지 지반구조물을 위한 하이브리드 T-M 지열벽의 개발</span><span class="en">Development of hybrid thermo-mechanical geothermal walls for energy geo-structures</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국연구재단 기초연구실지원사업 · 학생연구자</span><span class="en" style="color:var(--muted);font-size:14px">NRF Basic Research Laboratory Program · Student researcher</span></div></li>
+    <li><div class="when">2023.03 – 2025.02</div><div><b><span class="ko">탄소중립 실현을 위한 지속가능 초고연성 무기계 복합재료 개발</span><span class="en">Sustainable ultra-ductile inorganic composites for carbon neutrality</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국연구재단 중견연구자지원사업 · 학생연구자</span><span class="en" style="color:var(--muted);font-size:14px">NRF Mid-Career Researcher Program · Student researcher</span></div></li>
+    <li><div class="when">2022.01 – 2022.12</div><div><b><span class="ko">자기치유형 친환경 콘크리트 기술개발 2단계 (고성능 섬유보강 자기치유 시멘트 복합재료 및 실용화 기술 개발)</span><span class="en">Self-healing eco-friendly concrete, Phase 2: high-performance fiber-reinforced self-healing cementitious composites and commercialization</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">국토교통과학기술진흥원 건설기술연구사업 · 학생연구자</span><span class="en" style="color:var(--muted);font-size:14px">KAIA Construction Technology Research Program · Student researcher</span></div></li>
+    <li><div class="when">2021.04 – 2022.12</div><div><b><span class="ko">콘크리트 구조물 조사용 무인 진단 시스템 적용을 위한 50N급 콘크리트 표면 점착 원천기술 개발</span><span class="en">50 N-class concrete-surface adhesion technology for unmanned inspection systems of concrete structures</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">국토교통과학기술진흥원 국토교통기술촉진연구사업 · 학생연구자</span><span class="en" style="color:var(--muted);font-size:14px">KAIA Land, Infrastructure and Transport Technology Promotion Program · Student researcher</span></div></li>
+    <li><div class="when">2019.06 – 2022.02</div><div><b><span class="ko">변형률 경화 섬유보강 알칼리활성 결합재 기반 복합재료 개발</span><span class="en">Strain-hardening fiber-reinforced alkali-activated binder-based composites</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국연구재단 중견연구자지원사업 · 연구보조원 · 학생연구자</span><span class="en" style="color:var(--muted);font-size:14px">NRF Mid-Career Researcher Program · Research assistant / Student researcher</span></div></li>
+  </ul>
+</div></section>
+
+<section id="awards"><div class="wrap">
+  <h2><span class="ko">수상 · 자격</span><span class="en">Awards & Certifications</span></h2>
+  <h3 class="sub"><span class="ko">수상</span><span class="en">Awards</span></h3>
+  <ul class="tl">
+    <li><div class="when">2024.10</div><div><b><span class="ko">우수논문발표상</span><span class="en">Excellent Paper Presentation Award</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국구조물진단유지관리공학회</span><span class="en" style="color:var(--muted);font-size:14px">Korea Institute for Structural Maintenance and Inspection</span></div></li>
+    <li><div class="when">2024.04</div><div><b><span class="ko">우수논문발표상</span><span class="en">Excellent Paper Presentation Award</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국구조물진단유지관리공학회</span><span class="en" style="color:var(--muted);font-size:14px">Korea Institute for Structural Maintenance and Inspection</span></div></li>
+    <li><div class="when">2017.12</div><div><b><span class="ko">콘크리트 기술 경연대회 품질부문 학생부 장려상</span><span class="en">Concrete Technology Competition, Quality Category (Student) — Honorable Mention</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국콘크리트학회</span><span class="en" style="color:var(--muted);font-size:14px">Korea Concrete Institute</span></div></li>
+  </ul>
+  <h3 class="sub"><span class="ko">국가기술자격</span><span class="en">Certifications</span></h3>
+  <ul class="tl">
+    <li><div class="when">2021.11</div><div><b><span class="ko">산업안전기사</span><span class="en">Engineer Industrial Safety</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국산업인력공단</span><span class="en" style="color:var(--muted);font-size:14px">HRD Korea (national technical qualification)</span></div></li>
+    <li><div class="when">2019.12</div><div><b><span class="ko">사무자동화산업기사</span><span class="en">Industrial Engineer Office Automation</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국산업인력공단</span><span class="en" style="color:var(--muted);font-size:14px">HRD Korea (national technical qualification)</span></div></li>
+    <li><div class="when">2018.12</div><div><b><span class="ko">건축재료시험기사</span><span class="en">Engineer Construction Material Testing</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국산업인력공단</span><span class="en" style="color:var(--muted);font-size:14px">HRD Korea (national technical qualification)</span></div></li>
+    <li><div class="when">2017.08</div><div><b><span class="ko">건설안전기사</span><span class="en">Engineer Construction Safety</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국산업인력공단</span><span class="en" style="color:var(--muted);font-size:14px">HRD Korea (national technical qualification)</span></div></li>
+    <li><div class="when">2016.12</div><div><b><span class="ko">건축기사</span><span class="en">Engineer Architecture</span></b><br><span class="ko" style="color:var(--muted);font-size:14px">한국산업인력공단</span><span class="en" style="color:var(--muted);font-size:14px">HRD Korea (national technical qualification)</span></div></li>
+  </ul>
+</div></section>
+
+<section id="patents"><div class="wrap">
+  <h2><span class="ko">특허</span><span class="en">Patents</span></h2>
+  <div class="pub"><div class="t"><span class="ko">고연성 섬유보강 시멘트 복합체 및 이의 제조방법</span><span class="en">Highly ductile fiber-reinforced cementitious composite and manufacturing method thereof</span><span class="badge"><span class="ko">등록</span><span class="en">Granted</span></span></div>
+  <div class="a"><span class="ko">대한민국 특허 제10-2634808호 · 출원 2021.08.19 · 등록 2024.02.02</span><span class="en">Korean Patent No. 10-2634808 · Filed 2021-08-19 · Granted 2024-02-02</span></div>
+  <div class="a"><span class="ko">발명자: 이방연, 양강혁, 최정일, <b>박세언</b>, 김영민</span><span class="en">Inventors: Bang Yeon Lee, Kanghyeok Yang, Jeong-Il Choi, <b>Se-Eon Park</b>, Young-Min Kim</span></div></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2><span class="ko">연락처</span><span class="en">Contact</span></h2>
+  <div class="contact">
+    <div><span>Email</span><button type="button" class="linkbtn js-email"><span class="ko">클릭하여 이메일 보기</span><span class="en">Click to show email</span></button></div>
+    <div><span class="ko">주소</span><span class="en">Address</span><p class="ko" style="margin:0">(61186) 광주광역시 북구 용봉로 77<br>전남대학교 공대2호관 211호</p><p class="en" style="margin:0">Rm. 211, Engineering Bldg. 2, Chonnam National University<br>77 Yongbong-ro, Buk-gu, Gwangju 61186, Republic of Korea</p></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Se-Eon Park · <span class="ko">최종 업데이트 2026년 11월</span><span class="en">Last updated November 2026</span></div></footer>
+
+<script>
+const PUBS = [{"authors": ["Quang-Hiếu Lương", "Phuong Hoang Nguyen", "Se-Eon Park", "Yun Yong Kim", "Huy Hoang Nguyen*", "Bang Yeon Lee*"], "year": 2026, "title": "Ultra-high tensile ductility up to 16.4% in lightweight, ambient-cured geopolymer composites at PE fiber contents of 0.5-1.5 vol%", "venue": "Developments in the Built Environment", "detail": "28, 101095, 1–14", "doi": "https://doi.org/10.1016/j.dibe.2026.101095", "cat": "intl"}, {"authors": ["Quang-Hiếu Lương", "Huy Hoang Nguyen", "Phuong Hoang Nguyen", "Se-Eon Park", "Hanh Nguyen-Cong", "Young-Sang Kim", "Taehwan Kim", "Bang Yeon Lee*"], "year": 2026, "title": "Synergistic enhancement of thermal and mechanical properties in alkali-activated slag composites through silicon carbide-induced densification", "venue": "Construction and Building Materials", "detail": "544, 148304", "doi": "https://doi.org/10.1016/j.conbuildmat.2026.148304", "cat": "intl"}, {"authors": ["Jaewon Lee", "Se-Eon Park", "Hyeongki Kim", "Young-sang Kim", "Bang Yeon Lee*"], "year": 2026, "title": "Contrasting effects of nanobubble water on the tensile behavior of PE-AAS and PBO-OPC composite systems", "venue": "Advances in Concrete Construction", "detail": "22(3), 293–308", "doi": "https://doi.org/10.12989/acc.2026.22.3.01", "cat": "intl"}, {"authors": ["Phuong Hoang Nguyen", "Huy Hoang Nguyen", "Quang-Hiếu Lương", "Se-Eon Park", "Hyeongki Kim", "Bang Yeon Lee*"], "year": 2026, "title": "Combined effect of hybrid PE-PBO fiber reinforcement on the mechanical properties of lightweight fly ash-slag-based engineered geopolymer composites at ambient temperature and after exposure to elevated temperatures", "venue": "Developments in the Built Environment", "detail": "26, 100938", "doi": "https://doi.org/10.1016/j.dibe.2026.100938", "cat": "intl"}, {"authors": ["Se-Eon Park", "Eunyoung Hwang", "Jeong-Il Choi", "Bang Yeon Lee*"], "year": 2025, "title": "High impact resistance with less material: a comparative study of Kagome truss and conventional rebar in concrete panels", "venue": "Developments in the Built Environment", "detail": "23, 100741", "doi": "https://doi.org/10.1016/j.dibe.2025.100741", "cat": "intl"}, {"authors": ["Eunyoung Hwang", "Se-Eon Park", "Youngsang Kim", "Huy Hoàng Nguyễn", "Bang Yeon Lee*"], "year": 2025, "title": "From textile waste to high-performance composites: investigating the role of selvage fibers in engineered cementitious composites", "venue": "Journal of Building Engineering", "detail": "108, 112964", "doi": "https://doi.org/10.1016/j.jobe.2025.112964", "cat": "intl"}, {"authors": ["Quang-Hiếu Lương", "Huy Hoàng Nguyễn", "Phương Hoàng Nguyễn", "Se-Eon Park", "Youngsang Kim", "Bang Yeon Lee*"], "year": 2025, "title": "Achieving ultra-ductility exceeding 13% and cost efficiency with rubberized alkali-activated slag-based cement-free composites", "venue": "Developments in the Built Environment", "detail": "22, 100677", "doi": "https://doi.org/10.1016/j.dibe.2025.100677", "cat": "intl"}, {"authors": ["Se-Eon Park", "Huy Hoàng Nguyễn", "Yun Yong Kim", "Youngsang Kim", "Bang Yeon Lee*"], "year": 2025, "title": "Length effects of PE-based selvage fibers on fresh, fiber dispersion, and tensile properties of engineered cementitious composites", "venue": "Journal of Sustainable Cement-Based Materials", "detail": "14(2), 327–337", "doi": "https://doi.org/10.1080/21650373.2024.2441432", "cat": "intl"}, {"authors": ["박세언", "이방연"], "year": 2025, "title": "고연성 지오폴리머 복합재료의 인장성능", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["이재원", "박세언", "이방연"], "year": 2025, "title": "나노버블수 사용에 따른 섬유보강 슬래그 기반 복합재료의 인장성능", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2025, "title": "고연성 지오폴리머 복합재료의 미시역학 성능", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2025, "title": "알칼리활성 플라이애시 기반 페이스트의 파괴에너지", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2025, "title": "알칼리활성 플라이애시 기반 복합재료의 섬유가교거동", "venue": "한국콘크리트학회 학술대회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2025, "title": "셀비지 섬유 길이에 따른 섬유 보강 시멘트 기반 복합재료의 역학 성능", "venue": "한국콘크리트학회 학술대회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["Huy Hoàng Nguyễn", "Phương Hoàng Nguyễn", "Quang-Hiếu Lương", "Se-Eon Park", "Youngsang Kim", "Bang Yeon Lee*"], "year": 2024, "title": "Crack-healing of cost-effective engineered cementitious composites reinforced by recycled selvage fiber", "venue": "Cement and Concrete Composites", "detail": "154, 105776", "doi": "https://doi.org/10.1016/j.cemconcomp.2024.105776", "cat": "intl"}, {"authors": ["Phương Hoàng Nguyễn", "Se-Eon Park", "Huy Hoàng Nguyễn", "Youngsang Kim", "Bang Yeon Lee*"], "year": 2024, "title": "Influential factor analysis of slag-based engineered cementitious composites using Taguchi robust method", "venue": "Journal of Structural Integrity and Maintenance", "detail": "9(1), 2317529", "doi": "https://doi.org/10.1080/24705314.2024.2317529", "cat": "intl"}, {"authors": ["박세언", "이방연"], "year": 2024, "title": "물-결합재 비율과 섬유 종류에 따른 고연성 복합재료의 압축 및 인장특성", "venue": "한국건설순환자원학회논문집", "detail": "", "doi": null, "cat": "dom", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2024, "title": "콘크리트용 점착재료의 부착특성", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2024, "title": "폴리에틸렌 섬유 분산성 평가", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2024, "title": "슬래그 양에 따른 고연성 복합재료의 성능", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["신승규", "박세언", "이방연"], "year": 2024, "title": "섬유 구성이 다른 셀비지 섬유보강 복합재료의 인장성능 비교", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["황은영", "박세언", "이방연"], "year": 2024, "title": "셀비지 보강 복합재료의 섬유가교 곡선", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2024, "title": "합성 섬유 종류에 따른 고연성 하이볼륨 슬래그 복합재료의 특성", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2024, "title": "셀비지 보강 복합재료의 미시역학 성능", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2024, "title": "PBO 섬유 개질에 따른 인발 특성", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["Se-Eon Park", "Jeong-Il Choi", "Huy Hoàng Nguyễn", "Quang-Hiếu Lương", "Phương Hoàng Nguyễn", "Bang Yeon Lee*"], "year": 2023, "title": "Cementless ultra-ductile composites reinforced by polyethylene-based short selvedge fibers for sustainable and resilient infrastructure", "venue": "Journal of Building Engineering", "detail": "68, 106198", "doi": "https://doi.org/10.1016/j.jobe.2023.106198", "cat": "intl"}, {"authors": ["Se-Eon Park", "Jeong-Il Choi", "Sungho Lee", "Eung-Sam Kim", "Bong-Kee Lee", "Bang Yeon Lee*"], "year": 2023, "title": "Surface Properties of Concrete and Bonding Strength of Pine Resin-based Adhesives to Concrete Surfaces", "venue": "Advances in Civil Engineering", "detail": "2023, 8829409", "doi": "https://doi.org/10.1155/2023/8829409", "cat": "intl"}, {"authors": ["박세언", "이방연"], "year": 2023, "title": "PE 섬유종류에 따른 무시멘트 복합재료의 성능", "venue": "한국건설순환자원학회논문집", "detail": "", "doi": null, "cat": "dom", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2023, "title": "콘크리트 표면의 정량적 평가", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2023, "title": "셀비지 섬유를 활용한 플라이애시 기반 섬유보강 복합재료의 성능", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2023, "title": "하이볼륨 슬래그 복합재료의 역학 성능", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2023, "title": "셀비지 섬유로 보강한 무시멘트 복합재료의 압축 및 인장 거동", "venue": "한국콘크리트학회 학술대회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["박세언", "이방연"], "year": 2023, "title": "고연성 복합재료로 보강된 보의 휨거동 해석", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["황은영", "박세언", "이방연"], "year": 2023, "title": "셀비지 구성 섬유별 복합재료 인장 성능", "venue": "한국구조물진단유지관리공학회 학술발표회 논문집", "detail": "", "doi": null, "cat": "conf", "kr": true}, {"authors": ["Jeong-Il Choi", "Se-Eon Park", "Yun Yong Kim", "Bang Yeon Lee*"], "year": 2022, "title": "Flexural behavior of composite beams of Kagome truss and fiber-reinforced cementitious composites", "venue": "Construction and Building Materials", "detail": "361, 129653", "doi": "https://doi.org/10.1016/j.conbuildmat.2022.129653", "cat": "intl"}, {"authors": ["Jeong-Il Choi", "Se-Eon Park", "YoungMin Kim", "Kanghyeok Yang", "Yun Yong Kim", "Bang Yeon Lee*"], "year": 2022, "title": "Highly ductile behavior and sustainability of engineered cementitious composites reinforced by PE based selvage fibers", "venue": "Cement and Concrete Composites", "detail": "104729", "doi": "https://doi.org/10.1016/j.cemconcomp.2022.104729", "cat": "intl"}, {"authors": ["Se-Eon Park", "Huy Hoàng Nguyễn", "Jeong-Il Choi", "Bang Yeon Lee", "Yun Yong Kim*"], "year": 2022, "title": "Comparison of mechanical and crack-healing properties of PE-PVA hybrid fiber-reinforced SHCCs in natural and underwater conditions", "venue": "Materials", "detail": "15(18), 6339", "doi": "https://doi.org/10.3390/ma15186339", "cat": "intl"}, {"authors": ["Jeong-Il Choi", "Se-Eon Park", "Huy Hoàng Nguyễn", "Yun Lee", "Bang Yeon Lee*"], "year": 2022, "title": "Resistance of hybrid layered composite panels composed of fiber-reinforced cementitious composites against high-velocity projectile impact", "venue": "Composite Structures", "detail": "281, 114993", "doi": "https://doi.org/10.1016/j.compstruct.2021.114993", "cat": "intl"}, {"authors": ["최정일", "박세언", "김윤용", "김영민", "이방연"], "year": 2022, "title": "고성능 원단의 셀비지를 활용한 시멘트 복합재료의 특성", "venue": "한국건설순환자원학회논문집", "detail": "", "doi": null, "cat": "dom", "kr": true}, {"authors": ["진정언", "최정일", "박세언", "이방연"], "year": 2022, "title": "폴리에틸렌 섬유 종류에 따른 고로슬래그 기반 무시멘트 복합재료의 역학특성", "venue": "한국건설순환자원학회논문집", "detail": "", "doi": null, "cat": "dom", "kr": true}, {"authors": ["Jeong-Il Choi", "Huy Hoàng Nguyễn", "Se-Eon Park", "Ravi Ranade", "Bang Yeon Lee*"], "year": 2021, "title": "Effects of fiber hybridization on mechanical properties and autogenous healing of alkali-activated slag-based composites", "venue": "Construction and Building Materials", "detail": "310, 125280", "doi": "https://doi.org/10.1016/j.conbuildmat.2021.125280", "cat": "intl"}, {"authors": ["Jeong-Il Choi", "Se-Eon Park", "Sang-Kyu Lee", "Gyu-Yong Kim", "Jae-Seung Hwang", "Bang Yeon Lee*"], "year": 2021, "title": "Impact resistant properties of Kagome truss reinforced composite panels", "venue": "Advances in Concrete Construction", "detail": "12(5), 391–398", "doi": "https://doi.org/10.12989/acc.2021.12.5.391", "cat": "intl"}, {"authors": ["박세언", "최정일", "김윤용", "이방연"], "year": 2021, "title": "고성능 감수제 종류에 따른 섬유보강 무시멘트 복합재료의 인장거동 및 균열 패턴", "venue": "한국건설순환자원학회논문집", "detail": "", "doi": null, "cat": "dom", "kr": true}, {"authors": ["박세언", "최정일", "이방연"], "year": 2021, "title": "양생 조건이 알칼리 활성 슬래그 기반 섬유보강 복합재료의 압축강도와 인장거동에 미치는 영향", "venue": "한국건설순환자원학회논문집", "detail": "", "doi": null, "cat": "dom", "kr": true}, {"authors": ["박세언", "최정일", "이봉기", "이방연"], "year": 2021, "title": "거푸집 종류에 따른 콘크리트 표면 특성", "venue": "한국건설순환자원학회논문집", "detail": "", "doi": null, "cat": "dom", "kr": true}, {"authors": ["Huy Hoàng Nguyễn", "Jeong-Il Choi", "Se-Eon Park", "Sang Lyul Cha", "Jungwon Huh", "Bang Yeon Lee*"], "year": 2020, "title": "Autogenous healing of high strength engineered cementitious composites (ECC) using calcium-containing binders", "venue": "Construction and Building Materials", "detail": "265, 120857", "doi": "https://doi.org/10.1016/j.conbuildmat.2020.120857", "cat": "intl"}, {"authors": ["Jeong-Il Choi", "Se-Eon Park", "Gyu-Yong Kim", "Sang-Kyu Lee", "Bang Yeon Lee"], "year": 2020, "title": "Impact Resistance Properties of High Strength Fiber-Reinforced Composites According to Types and Amounts of Fibers", "venue": "Journal of the Korean Recycled Construction Resources Institute", "detail": "", "doi": "https://doi.org/10.14190/jrcr.2020.8.3.349", "cat": "dom"}, {"authors": ["Se-Eon Park", "Jeong Il Choi", "Jae-Seung Hwang", "Bang Yeon Lee"], "year": 2020, "title": "Damping Characteristics of Polyurethane Composites Incorporating Recycled Rubber Particles and Aggregates", "venue": "Journal of the Korean Recycled Construction Resources Institute", "detail": "", "doi": "https://doi.org/10.14190/jrcr.2020.8.3.263", "cat": "dom"}, {"authors": ["Huy Hoàng Nguyễn", "Jeong-Il Choi", "Se-Eon Park", "Bang Yeon Lee"], "year": 2020, "title": "Tensile Behavior of Ultra-High-Ductile Fiber-Reinforced Cementless Composites", "venue": "Lecture notes in civil engineering", "detail": "", "doi": "https://doi.org/10.1007/978-981-15-5144-4_58", "cat": "conf"}, {"authors": ["Jeong-Il Choi", "Se-Eon Park", "Huy Hoàng Nguyễn", "Sang Lyul Cha", "Bang Yeon Lee*"], "year": 2019, "title": "Strain-hardening and high-ductile behavior of alkali-activated slag-based composites with added zirconia silica fume", "venue": "Materials", "detail": "12(21), 3523", "doi": "https://doi.org/10.3390/ma12213523", "cat": "intl"}, {"authors": ["Jeong-Il Choi", "Se-Eon Park", "Su-Tae Kang", "Bang Yeon Lee*"], "year": 2019, "title": "Effects of aging on the tensile properties of polyethylene fiber-reinforced alkali-activated slag-based composite", "venue": "Advances in Materials Science and Engineering", "detail": "7573635, 1–8", "doi": "https://doi.org/10.1155/2017/7573635", "cat": "intl"}, {"authors": ["Gyu-Yong Kim", "Jeong-Il Choi", "Se-Eon Park", "Hongseop Kim", "Yun Lee", "Bang Yeon Lee*"], "year": 2018, "title": "Response of UHPFRC and HDFRC under static and high-velocity projectile impact loads", "venue": "Construction and Building Materials", "detail": "188, 399–408", "doi": "https://doi.org/10.1016/j.conbuildmat.2018.08.135", "cat": "intl"}, {"authors": ["Kang Seok Lee", "Jeong-Il Choi", "Se-Eon Park", "Jae-Seung Hwang", "Bang Yeon Lee"], "year": 2018, "title": "Damping property of prepacked concrete incorporating coarse aggregates coated with polyurethane", "venue": "Cement and Concrete Composites", "detail": "", "doi": "https://doi.org/10.1016/j.cemconcomp.2018.06.018", "cat": "intl"}, {"authors": ["Jeong-Il Choi", "Se-Eon Park", "Bang Yeon Lee", "Yun-Yong Kim"], "year": 2018, "title": "Tensile Properties of Polyethylene Fiber-Reinforced Highly Ductile Composite with Compressive Strength of 100 MPa Class", "venue": "Journal of the Korea Concrete Institute", "detail": "", "doi": "https://doi.org/10.4334/jkci.2018.30.5.497", "cat": "dom"}, {"authors": ["Se-Eon Park", "Jeong-Il Choi", "Bang Yeon Lee"], "year": 2018, "title": "Effect of Polyurethane Coating of Aggregates on the Damping Ratio of Concrete", "venue": "Journal of Wind and Engineering", "detail": "", "doi": null, "cat": "dom"}, {"authors": ["Jeong-Il Choi", "Se-Eon Park", "Bang Yeon Lee"], "year": 2017, "title": "Compressive and Tensile Properties of Fiber-Reinforced Cementless Composites According to the Combination of Sodium-Type Alkali-Activators", "venue": "Journal of the Korean Recycled Construction Resources Institute", "detail": "", "doi": "https://doi.org/10.14190/jrcr.2017.5.1.029", "cat": "dom"}, {"authors": ["Jeong-Il Choi", "Se-Eon Park", "Bang Yeon Lee"], "year": 2017, "title": "Compressive Strength and Tensile Behavior of Ultra-High Performance Concrete and High-Ductile Cementless Composite", "venue": "Journal of the Korea institute for structural maintenance and inspection", "detail": "", "doi": null, "cat": "dom"}];
+const ME = "Se-Eon Park";
+const list = document.getElementById('pubList');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function render(filter){
+  const isMe = a => { a = a.replace('*',''); return a===ME || a==='박세언'; };
+  const items = PUBS.filter(p => filter==='all' || (filter==='first' ? isMe(p.authors[0]) : p.cat===filter));
+  let html = '', y = null;
+  for (const p of items){
+    if (p.year !== y){ y = p.year; html += `<div class="year">${y}</div>`; }
+    const authors = p.authors.map(a => isMe(a) ? `<b>${esc(a)}</b>` : esc(a)).join(', ');
+    const first = isMe(p.authors[0]) ? '<span class="badge">1st</span>' : '';
+    const lbl = {dom:'Domestic', conf:'Conference'}[p.cat];
+    const tag = lbl ? `<span class="badge" style="background:var(--soft);color:var(--muted)">${lbl}</span>` : '';
+    const title = p.doi ? `<a href="${esc(p.doi)}" target="_blank" rel="noopener">${esc(p.title)}</a>` : esc(p.title);
+    html += `<div class="pub"><div class="t">${title}${first}${tag}</div><div class="a">${authors}</div><div class="v">${esc(p.venue||'')}${p.detail ? `<span style="font-style:normal">, ${esc(p.detail)}</span>` : ''}</div></div>`;
+  }
+  list.innerHTML = html;
+}
+render('all');
+document.querySelectorAll('.chip').forEach(b => b.onclick = () => {
+  document.querySelectorAll('.chip').forEach(x => x.classList.remove('on'));
+  b.classList.add('on'); render(b.dataset.f);
+});
+const btn = document.getElementById('langBtn');
+function setLang(l){ document.body.dataset.lang = l; document.documentElement.lang = l; btn.textContent = l==='ko' ? 'EN' : '한국어'; try{localStorage.setItem('lang', l)}catch(e){} }
+let saved = null; try{ saved = localStorage.getItem('lang') }catch(e){}
+setLang(saved || (navigator.language.startsWith('ko') ? 'ko' : 'en'));
+btn.onclick = () => setLang(document.body.dataset.lang==='ko' ? 'en' : 'ko');
+
+// Email is assembled only on click so it never appears as plain text in the HTML
+document.querySelectorAll('.js-email').forEach(el => el.addEventListener('click', () => {
+  const addr = ['un6282', 'gmail.com'].join(String.fromCharCode(64));
+  document.querySelectorAll('.js-email').forEach(x => {
+    const a = document.createElement('a');
+    a.href = 'mailto:' + addr;
+    a.className = x.classList.contains('btn') ? 'btn primary' : '';
+    a.textContent = (x.classList.contains('btn') ? '✉ ' : '') + addr;
+    x.replaceWith(a);
+  });
+}));
+</script>
+</body>
+</html>
