@@ -47,6 +47,14 @@ h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gree
 .topic{border:1px solid var(--line);border-left:3px solid var(--green);border-radius:10px;padding:16px 18px;background:var(--card)}
 .topic h3{margin:0 0 6px;font-size:16px}
 .topic p{margin:0;font-size:14px;color:var(--muted)}
+.topics.core{grid-template-columns:repeat(2,1fr)}
+@media (max-width:640px){.topics.core{grid-template-columns:1fr}}
+.topics.core .topic{border-left-width:4px;padding:20px 22px}
+.topics.core .topic h3{font-size:18px;color:var(--green-d)}
+.topics.core .topic .tag{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.subh{font-size:14px;font-weight:600;color:var(--muted);margin:28px 0 12px}
+.topics.minor .topic{border-left-color:var(--line)}
+.kwline{margin:10px 0 0;font-size:14px;letter-spacing:.02em;color:var(--green-d)}
 .tl{list-style:none;margin:0 0 8px;padding:0}
 h3.sub{font-size:15px;margin:22px 0 6px;color:var(--ink)}h3.sub:first-of-type{margin-top:0}
 .tl li{display:grid;grid-template-columns:140px 1fr;gap:16px;padding:10px 0;border-top:1px dashed var(--line)}
@@ -93,6 +101,7 @@ button.btn{cursor:pointer;font-family:inherit}
       <small><span class="ko">Se-Eon Park, Ph.D.</span><span class="en">박세언, Ph.D.</span></small></h1>
     <p class="role"><span class="ko">박사후연구원</span><span class="en">Postdoctoral Researcher</span></p>
     <p class="aff"><span class="ko">전남대학교 건축토목공학과 · <a href="https://ekvm80.github.io/cmlab/" target="_blank" rel="noopener">건설재료연구실</a> (지도교수 이방연)</span><span class="en"><a href="https://ekvm80.github.io/cmlab/" target="_blank" rel="noopener">Construction Materials Lab</a>, Dept. of Architecture and Civil Engineering, Chonnam National University</span></p>
+    <p class="kwline"><span class="ko">고연성 복합재료 · 지오폴리머 · 충격 저항 · 폐섬유 재활용</span><span class="en">ECC · Geopolymer · Impact Resistance · Recycled Fibers</span></p>
     <div class="btns">
       <button type="button" class="btn primary js-email">✉ <span class="ko">이메일 보기</span><span class="en">Show email</span></button>
       <a class="btn" href="https://scholar.google.co.kr/citations?user=KJcBHtAAAAAJ&hl=ko" target="_blank" rel="noopener">Google Scholar ↗</a>
@@ -118,12 +127,15 @@ button.btn{cursor:pointer;font-family:inherit}
 
 <section id="research"><div class="wrap">
   <h2><span class="ko">연구분야</span><span class="en">Research Interests</span></h2>
-  <div class="topics">
-    <div class="topic"><h3><span class="ko">고연성 시멘트 복합재료 (ECC)</span><span class="en">Engineered Cementitious Composites</span></h3><p><span class="ko">변형경화 거동, 섬유 하이브리드화, 인장연성 향상</span><span class="en">Strain-hardening behavior, fiber hybridization, tensile ductility</span></p></div>
-    <div class="topic"><h3><span class="ko">무시멘트·지오폴리머 복합재료</span><span class="en">Alkali-Activated & Geopolymer Composites</span></h3><p><span class="ko">슬래그·플라이애시 기반, 경량화, 고온 노출 후 성능</span><span class="en">Slag/fly-ash binders, lightweight mixes, elevated-temperature performance</span></p></div>
-    <div class="topic"><h3><span class="ko">폐섬유 재활용</span><span class="en">Recycled Selvage Fibers</span></h3><p><span class="ko">섬유산업 폐기물(셀비지 섬유)을 활용한 저비용·지속가능 복합재료</span><span class="en">Low-cost, sustainable composites using textile-waste PE selvage fibers</span></p></div>
+  <div class="topics core">
+    <div class="topic"><span class="tag">01</span><h3><span class="ko">고연성 복합재료</span><span class="en">ECC</span></h3><p><span class="ko">고연성 시멘트 복합재료(ECC/SHCC)의 변형경화 거동, 섬유 하이브리드화, 인장연성 향상</span><span class="en">Engineered cementitious composites (ECC/SHCC): strain-hardening behavior, fiber hybridization, tensile ductility</span></p></div>
+    <div class="topic"><span class="tag">02</span><h3><span class="ko">지오폴리머</span><span class="en">Geopolymer</span></h3><p><span class="ko">무시멘트 알칼리활성·지오폴리머 복합재료 — 슬래그·플라이애시 기반, 경량화, 고온 노출 후 성능</span><span class="en">Cement-free alkali-activated and geopolymer composites — slag/fly-ash binders, lightweight mixes, elevated-temperature performance</span></p></div>
+    <div class="topic"><span class="tag">03</span><h3><span class="ko">충격 저항</span><span class="en">Impact Resistance</span></h3><p><span class="ko">카고메 트러스 보강, 고속 비상체 충격, 하이브리드 적층 패널의 저항성능</span><span class="en">Kagome truss reinforcement, high-velocity projectile impact, hybrid layered panels</span></p></div>
+    <div class="topic"><span class="tag">04</span><h3><span class="ko">폐섬유 재활용</span><span class="en">Recycled Fibers</span></h3><p><span class="ko">섬유산업 폐기물(셀비지 섬유)을 활용한 저비용·지속가능 복합재료</span><span class="en">Low-cost, sustainable composites using textile-waste PE selvage fibers</span></p></div>
+  </div>
+  <p class="subh"><span class="ko">관련 연구</span><span class="en">Related topics</span></p>
+  <div class="topics minor">
     <div class="topic"><h3><span class="ko">자기치유</span><span class="en">Autogenous Crack Healing</span></h3><p><span class="ko">자연·수중 환경에서의 균열 치유 및 성능 회복</span><span class="en">Crack healing and recovery in natural and underwater conditions</span></p></div>
-    <div class="topic"><h3><span class="ko">충격 저항 구조</span><span class="en">Impact-Resistant Structures</span></h3><p><span class="ko">카고메 트러스 보강, 고속 비상체 충격, 하이브리드 적층 패널</span><span class="en">Kagome truss reinforcement, high-velocity projectile impact, layered panels</span></p></div>
     <div class="topic"><h3><span class="ko">이미지 프로세싱 · AI 분석</span><span class="en">Image Processing & AI Analysis</span></h3><p><span class="ko">섬유 분산성 평가, 표면 정량 평가, 데이터 분석 및 코딩</span><span class="en">Fiber-dispersion evaluation, quantitative surface assessment, data analysis and coding</span></p></div>
     <div class="topic"><h3><span class="ko">감쇠 및 기능성 재료</span><span class="en">Damping & Functional Materials</span></h3><p><span class="ko">폴리우레탄 코팅 골재, 고무 입자 복합재료의 감쇠 특성</span><span class="en">Polyurethane-coated aggregates and rubberized composites for damping</span></p></div>
   </div>
